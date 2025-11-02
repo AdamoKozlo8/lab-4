@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main()
+{
+    int i, num_day, start;
+    
+    printf("Podaj liczbe dni: ");
+    scanf("%d", &num_day);
+    
+    //printf("Podaj dzien startowy: ");
+    //scanf("%d", &start);
+    
+    for(i=1; i<=num_day; i++){
+        
+        if(i%7==1) printf("\n");
+        
+        printf("%3d", i);
+    }
+
+    return 0;
+}
